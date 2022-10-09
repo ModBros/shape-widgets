@@ -1,0 +1,52 @@
+{
+  "name": "rectangle",
+  "displayName": "Rectangle",
+  "filename": "Rectangle.tsx",
+  "config": [
+    {
+      "type": "separator",
+      "label": "Background"
+    },
+    {
+      "name": "background_color",
+      "label": "Background Color",
+      "type": "color"
+    },
+    {
+      "type": "separator",
+      "label": "Border"
+    },
+    {
+      "name": "border_color",
+      "label": "Border Color",
+      "type": "color"
+    },
+    {
+      "name": "border_thickness",
+      "label": "Border Thickness (px)",
+      "type": "number",
+      "min": 0
+    },
+    {
+      "name": "border_radius",
+      "label": "Border Radius (px)",
+      "type": "number",
+      "min": 0
+    },
+    {
+      "name": "border_style",
+      "label": "Border Style",
+      "type": "select",
+      "options": [
+        {
+          "label": "Solid",
+          "value": "solid"
+        },
+        {
+          "label": "Dashed",
+          "value": "dashed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "name": "text",
+  "displayName": "Text",
+  "filename": "Text.tsx",
+  "config": [
+    {
+      "name": "text",
+      "type": "string",
+      "label": "Text"
+    },
+    {
+      "name": "align_horizontal",
+      "type": "select",
+      "label": "Align Horizontal",
+      "options": [
+        {
+          "label": "Left",
+          "value": "flex-start"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "flex-end"
+        }
+      ]
+    },
+    {
+      "name": "align_vertical",
+      "type": "select",
+      "label": "Align Vertical",
+      "options": [
+        {
+          "label": "Top",
+          "value": "flex-start"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Bottom",
+          "value": "flex-end"
+        }
+      ]
+    },
+    {
+      "name": "text_color",
+      "type": "color",
+      "label": "Text Color"
+    },
+    {
+      "name": "font_size",
+      "type": "number",
+      "label": "Font Size",
+      "min": 0
+    },
+    {
+      "name": "font",
+      "type": "font"
+    }
+  ]
+}

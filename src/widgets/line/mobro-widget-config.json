@@ -1,0 +1,51 @@
+{
+  "name": "line",
+  "displayName": "Line",
+  "filename": "Line.tsx",
+  "config": [
+    {
+      "name": "line_color",
+      "label": "Line Color",
+      "type": "color"
+    },
+    {
+      "name": "line_thickness",
+      "label": "Line Thickness (px)",
+      "type": "number"
+    },
+    {
+      "type": "separator",
+      "label": "Corner"
+    },
+    {
+      "name": "corner_start",
+      "label": "Corner Start",
+      "type": "select",
+      "options": [
+        {
+          "label": "Normal",
+          "value": "normal"
+        },
+        {
+          "label": "Rounded",
+          "value": "rounded"
+        }
+      ]
+    },
+    {
+      "name": "corner_end",
+      "label": "Corner End",
+      "type": "select",
+      "options": [
+        {
+          "label": "Normal",
+          "value": "normal"
+        },
+        {
+          "label": "Rounded",
+          "value": "rounded"
+        }
+      ]
+    }
+  ]
+}
