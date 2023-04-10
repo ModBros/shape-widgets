@@ -48,12 +48,13 @@ const Image: FunctionComponent = () => {
   const posX = useSelectField({field: 'position_x', defaultValue: 'center'})
   const posY = useSelectField({field: 'position_y', defaultValue: 'center'})
 
+
   if (!image) {
     return <ImagePlaceholder/>
   }
 
   return <StyledImage size={size} posX={posX} posY={posY} style={{
-    backgroundImage: `url(${image.src})`,
+    backgroundImage: `url('${image.src}')`,
   }}/>;
 }
 
