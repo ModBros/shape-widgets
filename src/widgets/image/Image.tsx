@@ -1,7 +1,8 @@
-import React, {FunctionComponent} from "react";
-import {useFileField, useSelectField} from "@modbros/dashboard-sdk";
+import React, {FunctionComponent} from 'react'
+import {useFileField, useSelectField} from '@modbros/dashboard-sdk'
 import ImageIcon from '../../assets/image.png'
-import styled from "styled-components";
+import styled from 'styled-components'
+import {StyledImage} from '../../components/StyledImage'
 
 const StyledPlaceholder = styled.div`
   display: flex;
@@ -18,19 +19,6 @@ const StyledPlaceholder = styled.div`
   span {
     text-align: center;
   }
-`
-
-interface StyledImageProps {
-  size: string;
-  posX: string;
-  posY: string;
-}
-
-const StyledImage = styled.div<StyledImageProps>`
-  background-repeat: no-repeat;
-  background-size: ${props => props.size};
-  background-position-x: ${props => props.posX};
-  background-position-y: ${props => props.posY};
 `
 
 const ImagePlaceholder: FunctionComponent = () => {
@@ -54,8 +42,8 @@ const Image: FunctionComponent = () => {
   }
 
   return <StyledImage size={size} posX={posX} posY={posY} style={{
-    backgroundImage: `url('${image.src}')`,
-  }}/>;
+    backgroundImage: `url('${image.src}')`
+  }}/>
 }
 
 export default Image

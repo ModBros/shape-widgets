@@ -1,0 +1,65 @@
+{
+  "name": "resource",
+  "displayName": "Resource",
+  "filename": "Resource.tsx",
+  "config": [
+    {
+      "name": "metric",
+      "label": "Metric",
+      "type": "metric"
+    },
+    {
+      "name": "size",
+      "label": "Size",
+      "type": "select",
+      "options": [
+        {
+          "label": "Cover",
+          "value": "cover"
+        },
+        {
+          "label": "Contain",
+          "value": "contain"
+        }
+      ]
+    },
+    {
+      "name": "position_x",
+      "label": "Horizontal Align",
+      "type": "select",
+      "options": [
+        {
+          "label": "Left",
+          "value": "left"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Right",
+          "value": "right"
+        }
+      ]
+    },
+    {
+      "name": "position_y",
+      "label": "Vertical Align",
+      "type": "select",
+      "options": [
+        {
+          "label": "Top",
+          "value": "top"
+        },
+        {
+          "label": "Center",
+          "value": "center"
+        },
+        {
+          "label": "Bottom",
+          "value": "bottom"
+        }
+      ]
+    }
+  ]
+}
