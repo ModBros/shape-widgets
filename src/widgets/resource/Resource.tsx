@@ -1,20 +1,23 @@
-import React, {FunctionComponent} from 'react'
+import React, {FunctionComponent, useCallback} from 'react'
 import {
   MissingConfigPlaceholder,
   useIsMetricFieldConfigured,
-  useMetricField,
+  useMemoizedMetricField,
   useSelectField
 } from '@modbros/dashboard-sdk'
 import {StyledImage} from '../../components/StyledImage'
-import {createMetricResourcePath} from '@modbros/dashboard-core'
+import {ChannelValue, createMetricResourcePath} from '@modbros/dashboard-core'
 
 const Resource: FunctionComponent = () => {
-  const channelValue = useMetricField({field: 'metric'})
   const metricConfigured = useIsMetricFieldConfigured({field: 'metric'})
   const size = useSelectField({field: 'size', defaultValue: 'cover'})
   const posX = useSelectField({field: 'position_x', defaultValue: 'center'})
   const posY = useSelectField({field: 'position_y', defaultValue: 'center'})
 
+  const memo = useCallback((channelValue: ChannelValue) => {
+    return createMetricResourcePath(channelValue?.value?.value?.toString());
+  }, [])
+  const {value, channelValue} = useMemoizedMetricField({field: 'metric', memo})
 
   if (!metricConfigured) {
     return <MissingConfigPlaceholder text={'Please select a metric'}/>
@@ -25,7 +28,7 @@ const Resource: FunctionComponent = () => {
   }
 
   return <StyledImage size={size} posX={posX} posY={posY} style={{
-    backgroundImage: `url('${createMetricResourcePath(channelValue?.value?.value?.toString())}')`
+    backgroundImage: `url('${value}')`
   }}/>
 }
 
