@@ -1,5 +1,6 @@
 {
   "name": "modbros_shapes",
   "displayName": "Shapes",
-  "description": "Includes customizable widgets to draw basic shapes such as lines or rectangles as well as a widget to include images."
+  "description": "Includes customizable widgets to draw basic shapes such as lines or rectangles as well as a widget to include images.",
+  "author": "ModBros"
 }
