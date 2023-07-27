@@ -3,6 +3,7 @@
 ## Changes
 
 - Improved performance by using memoized metric values if possible.
+- Default sizing for images and resources is now contain and not cover.
 
 # 0.0.4
 

@@ -10,7 +10,7 @@ import {ChannelValue, createMetricResourcePath} from '@modbros/dashboard-core'
 
 const Resource: FunctionComponent = () => {
   const metricConfigured = useIsMetricFieldConfigured({field: 'metric'})
-  const size = useSelectField({field: 'size', defaultValue: 'cover'})
+  const size = useSelectField({field: 'size', defaultValue: 'contain'})
   const posX = useSelectField({field: 'position_x', defaultValue: 'center'})
   const posY = useSelectField({field: 'position_y', defaultValue: 'center'})
 

@@ -32,7 +32,7 @@ const ImagePlaceholder: FunctionComponent = () => {
 
 const Image: FunctionComponent = () => {
   const image = useFileField({field: 'image'})
-  const size = useSelectField({field: 'size', defaultValue: 'cover'})
+  const size = useSelectField({field: 'size', defaultValue: 'contain'})
   const posX = useSelectField({field: 'position_x', defaultValue: 'center'})
   const posY = useSelectField({field: 'position_y', defaultValue: 'center'})
 
