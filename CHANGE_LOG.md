@@ -1,3 +1,11 @@
+# 0.0.6
+
+## Changes
+
+- Images now accept an external url.
+- New video image which can play local videos or external urls.
+- New iframe widget which can include any url and render it like a browser.
+
 # 0.0.5
 
 ## Changes

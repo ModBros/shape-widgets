@@ -1,0 +1,12 @@
+{
+  "name": "iframe",
+  "displayName": "Iframe",
+  "filename": "Iframe.tsx",
+  "config": [
+    {
+      "name": "external_url",
+      "label": "External Url",
+      "type": "string"
+    }
+  ]
+}

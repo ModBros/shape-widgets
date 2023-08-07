@@ -5,8 +5,14 @@
   "config": [
     {
       "name": "image",
+      "label": "Image",
       "type": "file",
       "accept": "image/*"
+    },
+    {
+      "name": "external_url",
+      "label": "External Url",
+      "type": "string"
     },
     {
       "name": "size",

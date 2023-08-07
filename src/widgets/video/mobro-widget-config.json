@@ -1,0 +1,32 @@
+{
+  "name": "video",
+  "displayName": "Video",
+  "filename": "Video.tsx",
+  "config": [
+    {
+      "name": "video",
+      "label": "Video",
+      "type": "file"
+    },
+    {
+      "name": "external_url",
+      "label": "External Url",
+      "type": "string"
+    },
+    {
+      "name": "autoplay",
+      "label": "Autoplay",
+      "type": "checkbox"
+    },
+    {
+      "name": "controls",
+      "label": "Controls",
+      "type": "checkbox"
+    },
+    {
+      "name": "mute",
+      "label": "Mute",
+      "type": "checkbox"
+    }
+  ]
+}
