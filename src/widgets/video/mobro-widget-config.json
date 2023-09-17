@@ -19,6 +19,11 @@
       "type": "checkbox"
     },
     {
+      "name": "loop",
+      "label": "Loop",
+      "type": "checkbox"
+    },
+    {
       "name": "controls",
       "label": "Controls",
       "type": "checkbox"

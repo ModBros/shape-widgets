@@ -9,7 +9,6 @@ const Line: FunctionComponent = () => {
   // const cornerEnd = useSelectField({field: 'corner_end', defaultValue: 'normal'})
 
   useEffect(() => {
-    console.log(setHeight);
     setHeight(lineThickness)
   }, [lineThickness])
 

@@ -1,3 +1,9 @@
+# 0.0.7
+
+## Changes
+
+- Added loop option for videos.
+
 # 0.0.6
 
 ## Changes

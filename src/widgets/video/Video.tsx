@@ -16,6 +16,7 @@ const Video: FunctionComponent = () => {
   const video = useFileField({ field: 'video' })
   const externalUrl = useStringField({ field: 'external_url' })
   const autoplay = useCheckboxField({ field: 'autoplay' })
+  const loop = useCheckboxField({ field: 'loop' })
   const controls = useCheckboxField({ field: 'controls' })
   const mute = useCheckboxField({ field: 'mute' })
 
@@ -24,7 +25,7 @@ const Video: FunctionComponent = () => {
   }
 
   return (
-    <StyledVideo autoPlay={autoplay} controls={controls} muted={mute}>
+    <StyledVideo autoPlay={autoplay} controls={controls} muted={mute} loop={loop}>
       <source src={externalUrl ? externalUrl : video.src} type={'video/mp4'} />
     </StyledVideo>
   )
