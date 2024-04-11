@@ -33,5 +33,25 @@
       "label": "Mute",
       "type": "checkbox"
     }
+  ],
+  "layout": [
+    {
+      "type": "fieldset",
+      "label": "Source",
+      "children": [
+        "video",
+        "external_url"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "label": "Options",
+      "children": [
+        "autoplay",
+        "loop",
+        "controls",
+        "mute"
+      ]
+    }
   ]
 }

@@ -5,21 +5,17 @@
   "config": [
     {
       "name": "line_color",
-      "label": "Line Color",
+      "label": "Color",
       "type": "color"
     },
     {
       "name": "line_thickness",
-      "label": "Line Thickness (px)",
+      "label": "Thickness (px)",
       "type": "number"
     },
     {
-      "type": "separator",
-      "label": "Corner"
-    },
-    {
       "name": "corner_start",
-      "label": "Corner Start",
+      "label": "Start",
       "type": "select",
       "options": [
         {
@@ -34,7 +30,7 @@
     },
     {
       "name": "corner_end",
-      "label": "Corner End",
+      "label": "End",
       "type": "select",
       "options": [
         {
@@ -45,6 +41,24 @@
           "label": "Rounded",
           "value": "rounded"
         }
+      ]
+    }
+  ],
+  "layout": [
+    {
+      "type": "fieldset",
+      "label": "Line",
+      "children": [
+        "line_color",
+        "line_thickness"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "label": "Corner",
+      "children": [
+        "corner_start",
+        "corner_end"
       ]
     }
   ]

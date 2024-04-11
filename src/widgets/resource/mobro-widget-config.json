@@ -5,8 +5,17 @@
   "config": [
     {
       "name": "metric",
-      "label": "Metric",
-      "type": "metric"
+      "label": "Resource metric",
+      "type": "metric",
+      "filters": {
+        "types": [
+          "image",
+          "icon"
+        ],
+        "valueTypes": [
+          "Resource"
+        ]
+      }
     },
     {
       "name": "size",
@@ -59,6 +68,24 @@
           "label": "Bottom",
           "value": "bottom"
         }
+      ]
+    }
+  ],
+  "layout": [
+    {
+      "type": "fieldset",
+      "label": "Source",
+      "children": [
+        "metric"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "label": "Options",
+      "children": [
+        "size",
+        "position_x",
+        "position_y"
       ]
     }
   ]

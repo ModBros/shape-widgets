@@ -67,5 +67,24 @@
         }
       ]
     }
+  ],
+  "layout": [
+    {
+      "type": "fieldset",
+      "label": "Source",
+      "children": [
+        "image",
+        "external_url"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "label": "Options",
+      "children": [
+        "size",
+        "position_x",
+        "position_y"
+      ]
+    }
   ]
 }

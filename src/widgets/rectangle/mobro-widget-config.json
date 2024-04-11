@@ -4,38 +4,30 @@
   "filename": "Rectangle.tsx",
   "config": [
     {
-      "type": "separator",
-      "label": "Background"
-    },
-    {
       "name": "background_color",
-      "label": "Background Color",
+      "label": "Color",
       "type": "color"
     },
     {
-      "type": "separator",
-      "label": "Border"
-    },
-    {
       "name": "border_color",
-      "label": "Border Color",
+      "label": "Color",
       "type": "color"
     },
     {
       "name": "border_thickness",
-      "label": "Border Thickness (px)",
+      "label": "Thickness (px)",
       "type": "number",
       "min": 0
     },
     {
       "name": "border_radius",
-      "label": "Border Radius (px)",
+      "label": "Radius (px)",
       "type": "number",
       "min": 0
     },
     {
       "name": "border_style",
-      "label": "Border Style",
+      "label": "Style",
       "type": "select",
       "options": [
         {
@@ -46,6 +38,25 @@
           "label": "Dashed",
           "value": "dashed"
         }
+      ]
+    }
+  ],
+  "layout": [
+    {
+      "type": "fieldset",
+      "label": "Fill",
+      "children": [
+        "background_color"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "label": "Border",
+      "children": [
+        "border_color",
+        "border_thickness",
+        "border_radius",
+        "border_style"
       ]
     }
   ]

@@ -59,7 +59,28 @@
     },
     {
       "name": "font",
+      "label": "Font",
       "type": "font"
+    }
+  ],
+  "layout": [
+    "text",
+    {
+      "type": "fieldset",
+      "label": "Alignment",
+      "children": [
+        "align_horizontal",
+        "align_vertical"
+      ]
+    },
+    {
+      "type": "fieldset",
+      "label": "Style",
+      "children": [
+        "text_color",
+        "font_size",
+        "font"
+      ]
     }
   ]
 }
